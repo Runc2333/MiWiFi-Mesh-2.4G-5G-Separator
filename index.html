@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+		<title>MiWiFI Mesh Frequency Separator - Powered by Runc</title>
+		<link rel="stylesheet" href="css/toasts.css">
+		<link rel="stylesheet" href="css/modal.css">
+		<link rel="stylesheet" href="css/waves.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="testConnection">
+			<div class="title">输入设备信息</div>
+			<input type="text" class="input" placeholder="address" value="192.168.31.1">
+			<div class="tag">路由器IP地址(通常为192.168.31.1)</div>
+			<input type="text" class="input" placeholder="psw">
+			<div class="tag">路由器管理密码</div>
+			<div class="btnContainer">
+				<a class="btn" id="testCon">连接设备</a>
+			</div>
+		</div>
+		<div class="baseInfomation">
+			<div class="title">配置修改</div>
+			<div class="subtitle">2.4G/5G双频合一</div>
+			<select class="input" id="bsd">
+				<option class="bsdOpt" value=0>关</option>
+				<option class="bsdOpt" value=1>开</option>
+			</select>
+			<div class="subtitle">2.4G SSID</div>
+			<input type="text" class="input" placeholder="2.4G SSID">
+			<div class="subtitle">2.4G 加密类型</div>
+			<input type="text" class="input" placeholder="2.4G Encryption">
+			<div class="subtitle">2.4G 密码</div>
+			<input type="text" class="input" placeholder="2.4G Password">
+			<div class="subtitle">2.4G 隐藏SSID</div>
+			<select class="input" id="24hidden">
+				<option class="24hiddenOpt" value=0>可见</option>
+				<option class="24hiddenOpt" value=1>隐藏</option>
+			</select>
+			<div class="subtitle">2.4G 发射功率</div>
+			<select class="input" id="24txpwr">
+				<option class="24txpwrOpt" value="max">全功率</option>
+			</select>
+			<div class="subtitle">5G SSID</div>
+			<input type="text" class="input" placeholder="5G SSID">
+			<div class="subtitle">5G 加密类型</div>
+			<input type="text" class="input" placeholder="5G Encryption">
+			<div class="subtitle">5G 密码</div>
+			<input type="text" class="input" placeholder="5G Password">
+			<div class="subtitle">5G 隐藏SSID</div>
+			<select class="input" id="5hidden">
+				<option class="5hiddenOpt" value=0>可见</option>
+				<option class="5hiddenOpt" value=1>隐藏</option>
+			</select>
+			<div class="subtitle">5G 发射功率</div>
+			<select class="input" id="5txpwr">
+				<option class="5txpwrOpt" value="max">全功率</option>
+			</select>
+			<div class="btnContainer">
+				<a class="btn" id="submit">提交到设备</a>
+			</div>
+		</div>
+		<!--Modal-->
+		<div class="modal">
+			<div class="modalContent">
+				<div class="modalTitle"></div>
+				<div class="modalText"></div>
+			</div>
+			<div class="modalOptions">
+				<a class="modalButton waves-effect"></a>
+				<a class="modalButton recommand waves-effect"></a>
+			</div>
+		</div>
+		<!--遮罩-->
+		<div class="mask"></div>
+		<!--遮罩结束-->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/materialize.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
