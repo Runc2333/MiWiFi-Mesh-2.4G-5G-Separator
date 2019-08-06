@@ -11,3 +11,5 @@ git clone https://github.com/Runc2333/MiWiFi-Mesh-2.4G-5G-Separator.git
 ```
 
 2.Enjoy!
+# demo
+本项目不提供线上DEMO。请自行部署使用。
