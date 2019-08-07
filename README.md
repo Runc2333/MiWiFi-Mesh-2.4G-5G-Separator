@@ -1,6 +1,6 @@
 # MiWiFi Mesh 2.4G/5G Separator
 
- 作者：Runc QQ交流群：222637159
+ 作者：Runc QQ交流群：222637159//群里也有最新的Release，方便国内用户下载
  
  分离小米路由器Mesh的2.4G和5G信号。
 
