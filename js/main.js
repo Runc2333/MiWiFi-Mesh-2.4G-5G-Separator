@@ -87,6 +87,7 @@ $("#testCon").on("click",function(){
 	$.ajax({
 		url:baseUrl+"/cgi-bin/luci/web/home",
 		type:"GET",
+		timeout:5000,
 		success:function(data){
 			var key = /(?<=key: ').*?(?=',)/.exec(data);
 			var mac = /(?<=var deviceId = ').*?(?=';)/.exec(data);
@@ -148,7 +149,7 @@ $("#testCon").on("click",function(){
 								$(".baseInfomation").show();
 							},
 							error:function(xhr){
-								popup("错误"+xhr.statusCode+":"+xhr.statusText);
+								popup("错误"+xhr.status+":"+xhr.statusText);
 								popup("出现未知错误，请在项目中提交Issue.");
 							}
 						});
@@ -157,13 +158,13 @@ $("#testCon").on("click",function(){
 					}
 				},
 				error:function(xhr){
-					popup("错误"+xhr.statusCode+":"+xhr.statusText);
+					popup("错误"+xhr.status+":"+xhr.statusText);
 					popup("出现未知错误，请在项目中提交Issue.");
 				}
 			});
 		},
 		error:function(xhr){
-			popup("错误"+xhr.statusCode+":"+xhr.statusText);
+			popup("错误"+xhr.status+":"+xhr.statusText);
 			popup("出现未知错误，请在项目中提交Issue.");
 		}
 	});
@@ -213,7 +214,7 @@ $("#submit").on("click",function(){
 			}
 		},
 		error:function(xhr){
-			popup("错误"+xhr.statusCode+":"+xhr.statusText);
+			popup("错误"+xhr.status+":"+xhr.statusText);
 			popup("出现未知错误，请在项目中提交Issue.");
 		}
 	});
