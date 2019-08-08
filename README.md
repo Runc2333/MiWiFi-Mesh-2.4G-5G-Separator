@@ -1,4 +1,4 @@
-# MiWiFi Mesh 2.4G/5G Separator
+# MiWiFi Mesh Configuror
 
  作者：Runc QQ交流群：222637159//群里也有最新的Release，方便国内用户下载
  
