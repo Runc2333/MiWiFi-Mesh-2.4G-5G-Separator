@@ -10,7 +10,7 @@
   "author": "Runc",
   "license": "GPL-2.0",
   "devDependencies": {
-    "electron": "^6.0.1"
+    "electron": "^15.5.5"
   },
   "dependencies": {
     "jquery": "^3.5.0"
